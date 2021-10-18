@@ -1,0 +1,29 @@
+/**
+ * Basic typography style for copy text
+ */
+
+/*=============== GOOGLE FONTS ===============*/
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap");
+
+body {
+  font-family: v.$body-font;
+  font-size: v.$normal-font-size;
+  @include m.media-breakpoint-up(lg) {
+    font-size: v.$normal-font-size-lg;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: v.$text-color;
+  font-weight: v.$font-semi-bold;
+  font-size: v.$biggest-font-size;
+  @include m.media-breakpoint-up(lg) {
+    font-size: v.$biggest-font-size-lg;
+  }
+}
