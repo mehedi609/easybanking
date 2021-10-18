@@ -1,3 +1,11 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+@use "../abstracts/variables" as v;
+
+.button {
+  padding: 1.4rem 3.5rem;
+  border-radius: 5rem;
+  background: v.$background-gradient;
+  font-weight: 400;
+}
