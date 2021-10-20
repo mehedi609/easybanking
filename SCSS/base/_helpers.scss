@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------------
 @use "sass:map";
 @use "../abstracts/mixins" as m;
+@use "../abstracts/_animations.css" as *;
 
 /**
  * Clear inner floats
@@ -63,4 +64,13 @@ $column-directions: (
   @include m.media-breakpoint-up(lg) {
     display: none;
   }
+}
+
+// animation
+.fade-in {
+  animation: fade-in 0.3s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fade-out 0.3s ease-in-out forwards;
 }
